@@ -6,7 +6,7 @@ function sum_even_numbers() {
       sum.push(i);
     }
   }
-  for (n in sum) {
+  for (let n in sum) {
     result += sum[n];
   }
   return result;
