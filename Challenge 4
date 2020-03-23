@@ -1,0 +1,9 @@
+function iter_Arr() {
+  var sum = [];
+  result = 0;
+  for (n in sum) {
+    result += sum[n];
+   }
+  return result;
+}
+iter_Arr();
