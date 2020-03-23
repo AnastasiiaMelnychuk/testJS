@@ -1,0 +1,11 @@
+function find_Max() {
+  var max = [-3, 3, 5, 7];
+  var result = max[0];
+  for (let i in max){
+    if(max[i] > result) {
+      result = max[i];
+    }
+  }
+  return result;
+}      
+find_Max();
