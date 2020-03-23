@@ -1,5 +1,5 @@
 function iter_Arr() {
-  var sum = [];
+  var sum = [-5, 2, 5, 12];
   result = 0;
   for (let n in sum) {
     result += sum[n];
