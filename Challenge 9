@@ -6,3 +6,13 @@ function squareVal(arr) {
   return result;
 }
 squareVal([1, 5, 10, -2]);
+
+/*
+function squareVal(arr) {
+  for (let n of arr) {
+    var result = arr.map(n => Math.pow(n,2));
+  }
+  return result;
+}
+squareVal([1, 5, 10, -2]);
+*/
