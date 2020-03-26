@@ -1,0 +1,9 @@
+function find_Max() {
+  var sum = [1, 3, 5, 7, 20];
+  result = 0;
+  for (let n of sum) {
+    result += n;
+  }
+  return result / sum.length;
+}
+find_Max()
