@@ -1,0 +1,17 @@
+function roundToTwo(n) {
+  return Math.round(n * 100) / 100;
+}
+
+var totalPrice;
+var fullPrice = prompt('Enter price without discount', 1000);
+var discount = prompt('Enter the discount', 10);
+
+if (fullPrice >= 0 && discount >= 0) {
+  totalPrice = fullPrice * (100 - discount) / 100;
+  console.log('Price without discount: ' + fullPrice);
+  console.log('Discount: ' + discount + '%');
+  console.log('Price with discount: ' + roundToTwo(totalPrice));
+  console.log('Saved: ' + roundToTwo(fullPrice - totalPrice));
+} else {
+  console.log('Invalid data');
+}
