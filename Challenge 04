@@ -1,9 +1,8 @@
-function iter_Arr() {
-  var sum = [-5, 2, 5, 12];
+function iter_Arr(arr) {
   result = 0;
-  for (let n in sum) {
-    result += sum[n];
+  for (let n in arr) {
+    result += arr[n];
    }
   return result;
 }
-iter_Arr();
+iter_Arr([-5, 2, 5, 12]);
