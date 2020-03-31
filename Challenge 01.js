@@ -6,3 +6,4 @@ function get_array(){
   return arr;
 }
 get_array();
+
