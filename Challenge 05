@@ -1,10 +1,10 @@
 function find_Max(arr) {
-  var result = arr[0];
+  var max = arr[0];
   for (let i in arr){
-    if(arr[i] > result) {
-      result = arr[i];
+    if(arr[i] > max) {
+      max = arr[i];
     }
   }
-  return result;
+  return max;
 }      
 find_Max([-3, 3, 5, 7]);
