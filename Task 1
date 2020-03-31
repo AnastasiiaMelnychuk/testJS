@@ -1,17 +1,17 @@
-function roundToTwo(n) {
-  return Math.round(n * 100) / 100;
-}
-
 var totalPrice;
-var fullPrice = prompt('Enter price without discount', 1000);
-var discount = prompt('Enter the discount', 10);
+var saved;
+var fullPrice = parseFloat(prompt('Enter price without discount',));
+var discount = parseFloat(prompt('Enter the discount',));
 
 if (fullPrice >= 0 && discount >= 0) {
   totalPrice = fullPrice * (100 - discount) / 100;
-  console.log(`Price without discount: ${fullPrice}
-  Discount: ${discount} %
-  Price with discount: ${roundToTwo(totalPrice)}
-  Saved: ${roundToTwo(fullPrice - totalPrice)}`);
+  saved = fullPrice - totalPrice;
+  
+  console.log(`
+  Price without discount: ${fullPrice.toFixed(2)}
+  Discount: ${discount.toFixed(2)} %
+  Price with discount: ${totalPrice.toFixed(2)}
+  Saved: ${saved.toFixed(2)}`);
 } else {
   console.log('Invalid data');
 }
