@@ -1,8 +1,8 @@
 function iter_Arr(arr) {
-  result = 0;
+  sum = 0;
   for (let n in arr) {
-    result += arr[n];
+    sum += arr[n];
    }
-  return result;
+  return sum;
 }
 iter_Arr([-5, 2, 5, 12]);
