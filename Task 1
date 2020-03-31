@@ -8,10 +8,10 @@ if (fullPrice >= 0 && discount >= 0) {
   saved = fullPrice - totalPrice;
   
   console.log(`
-  Price without discount: ${fullPrice.toFixed(2)}
-  Discount: ${discount.toFixed(2)} %
-  Price with discount: ${totalPrice.toFixed(2)}
-  Saved: ${saved.toFixed(2)}`);
+  Price without discount: ${parseFloat(fullPrice.toFixed(2))}
+  Discount: ${parseFloat(discount.toFixed(2))} %
+  Price with discount: ${parseFloat(totalPrice.toFixed(2))}
+  Saved: ${parseFloat(saved.toFixed(2))}`);
 } else {
   console.log('Invalid data');
 }
