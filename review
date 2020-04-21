@@ -1,0 +1,79 @@
+Challenge 1 - looks good!
+
+
+Challenge 2 good, also possible solution
+
+function sum_odd_5000() {
+  var result = 0;
+  for ( let i = 1; i <= 5000; i++) {
+    if( i % 2 === 1) {
+      result += i
+    }
+  }
+return result 
+}
+sum_even_numbers()
+
+Challenge 3 - looks good!
+
+Challenge  4 - code works only for one specific array [-5, 2, 5, 12]. It should count the sum of all the values in any array, please see how the current code  works in the console - it outputs 14, but expected 8.
+
+
+I suppose the initial function view might confuse you, sorry. In this function we have to pass array as a parameter and it will work for any array :
+
+
+function iter_Arr(arr) {
+  var sum = arr [0];
+//your code
+
+}
+
+Challenge 5 - same here, the current code works only for specific array, please rewrite using array as an argument:
+
+function find_Max(arr) {
+  var max = arr[0];
+//your code
+
+}
+
+
+
+
+Challenge 6 - the same here, lets pass an array as an argument:
+
+function find_Avg(arr) {
+  var sum = arr[0];
+//your code
+
+}
+
+
+Challenge 7 - looks good!
+
+
+Challenge 8 - looks good!
+
+Challenge 9 - looks good!
+
+Challenge 10 - looks good!
+
+Challenge 11 - looks good!
+
+Challenge 12 - looks good!
+
+Challenge 13 - looks good!
+
+Task 1 - 
+
+Please, use parseFloat
+
+ var fullPrice = parseFloat(prompt('Enter price without discount', 1000));
+ var discount = parseFloat(prompt('Enter the discount', 10));
+
+
+In the current code without parseFloat if you try f.e. 799,89 (comma symbol) it will output “Invalid data”
+
+Please, use toFixed(2) instead of Math.round()  function
+Placeholders 1000, and 10 are not necessary 
+
+Task 2 - same here, please use parseFloat and toFixed(2)
